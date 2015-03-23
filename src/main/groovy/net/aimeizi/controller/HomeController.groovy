@@ -24,4 +24,9 @@ class HomeController {
         modelAndView.addObject("studentList",studentList)
         return modelAndView
     }
+
+    @RequestMapping(value = "/welcome",method = RequestMethod.GET)
+    String welcome(){
+        return "welcome"
+    }
 }

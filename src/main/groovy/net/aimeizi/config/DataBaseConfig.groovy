@@ -18,11 +18,11 @@ import javax.sql.DataSource
  */
 
 /**
- * 自定义数据库连接配置类
+ * 自定义数据库连接配置类 该类不是必须的。用于自定义配置数据源信息
  */
-@Configuration
-@EnableTransactionManagement
-@PropertySource(value = "classpath:application.properties")
+//@Configuration
+//@EnableTransactionManagement
+//@PropertySource(value = "classpath:application.properties")
 class DataBaseConfig {
 
     @Value('${spring.datasource.driverClassName}')

@@ -12,6 +12,11 @@
     <title></title>
 </head>
 <body>
-<%=studentList%>
+<c:forEach items="${studentList}" var="student">
+    <c:out value="${student.id}"/>
+    <c:out value="${student.name}"/>
+    <c:out value="${student.age}"/>
+    <hr/>
+</c:forEach>
 </body>
 </html>
